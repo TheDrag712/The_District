@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1em;
+}
+
+body {
+  margin: auto;
+}
+
+.header {
+  background-color: #970747;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0px;
+}
+
+.logo_header {
+  max-width: 8em;
+}
+
+nav {
+  display: inline-flex;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+a.nav_barre {
+  color: black;
+  min-width: 75px;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+main section.recherche {
+  background-image: url(../Document/bg.jpg);
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.barre-recherche {
+  min-width: 75%;
+}
+
+section.categorie {
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_template {
+  border: 1px solid black;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  filter: brightness(0.75);
+}
+
+div.grid_template p {
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.asian_food {
+  background-image: url(../Document/category/asian_food_cat.jpg);
+}
+
+.burger {
+  background-image: url(../Document/category/burger_cat.jpg);
+}
+
+.Pasta {
+  background-image: url(../Document/category/pasta_cat.jpg);
+}
+
+.Pizza {
+  background-image: url(../Document/category/pizza_cat.jpg);
+}
+
+.salade {
+  background-image: url(../Document/category/salade_cat.jpg);
+}
+
+.Sandwich {
+  background-image: url(../Document/category/sandwich_cat.jpg);
+}
+
+.Veggie {
+  background-image: url(../Document/category/veggie_cat.jpg);
+}
+
+.Wrap {
+  background-image: url(../Document/category/wrap_cat.jpg);
+}
