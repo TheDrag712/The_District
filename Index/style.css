@@ -9,8 +9,12 @@
   font-size: 1em;
 }
 
-body {
-  margin: 0;
+body.body {
+  margin: 0 auto;
+  background-color: #778899;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* CSS liéer au header */
@@ -20,11 +24,14 @@ header.header {
   display: flex;
   width: calc(100%-32px);
   justify-content: space-between;
-  padding: 4px 32px;
+  padding: 8px 16px;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
-div.logo img {
+img.logo-header {
   height: 50px;
 }
 
@@ -33,18 +40,124 @@ nav.nav-header {
   gap: 32px;
 }
 
-li.nav-barre {
-  list-style: none;
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 4px 8px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 /* CSS liéer au main */
 
+main.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* CSS pour la section D'image de fond */
+
+Section.image-fond {
+  background: url(../Document/bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #47b4d1;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.barre-recherche {
+  border-radius: 8px;
+  opacity: 0.5;
+  text-align: center;
+  padding: 4px;
+  min-width: 25%;
+}
+
+input.barre-recherche:hover {
+  transition: all 0.3s ease-out;
+  padding: 8px;
+  min-width: 50%;
+}
+
+input.barre-recherche:focus {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  padding: 8px;
+  min-width: 50%;
+}
+
+/* CSS pour la section principale avec les catégories et les plats */
+
+section.grid-cat,
+section.grid-plat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 75px;
+}
+
+div.carte {
+  border: 1px solid black;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.cat {
+  min-height: 150px;
+}
+
+div.plat {
+  min-height: 100px;
+}
+
+#asian-cat {
+  background-image: url(../Document/category/asian_food_cat.jpg);
+}
+#burger-cat {
+  background-image: url(../Document/category/burger_cat.jpg);
+}
+#pasta-cat {
+  background-image: url(../Document/category/pasta_cat.jpg);
+}
+#pizza-cat {
+  background-image: url(../Document/category/pizza_cat.jpg);
+}
+#salade-cat {
+  background-image: url(../Document/category/salade_cat.jpg);
+}
+#sandwich-cat {
+  background-image: url(../Document/category/sandwich_cat.jpg);
+}
+#buffalo-plat {
+  background-image: url(../Document/food/buffalo-chicken.webp);
+}
+#cheesburger-plat {
+  background-image: url(../Document/food/cheesburger.jpg);
+}
+#courgettes-plat {
+  background-image: url(../Document/food/courgettes_farcies.jpg);
+}
+
+p.texte-cat {
+  border-radius: 4px;
+  padding: 2px 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
 /* CSS liéer au footer */
+
+footer.footer {
+  display: flex;
+  width: 65%;
+  background-color: #970747;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+img.image-reseaux {
+  height: 75px;
+}
