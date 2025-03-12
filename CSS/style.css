@@ -1,34 +1,25 @@
-/* CSS globale */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   font-family: "Montserrat";
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 1em;
+}
+
+.gap32 {
+  gap: 32px;
 }
 
 body.body {
-  margin: 0 auto;
-  background-color: #778899;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  background-color: #778899;
 }
 
-/* CSS liéer au header */
-
 header.header {
-  background-color: #970747;
   display: flex;
-  width: calc(100%-32px);
   justify-content: space-between;
-  padding: 8px 16px;
   align-items: center;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
+  background-color: #970747;
+  padding: 16px;
 }
 
 img.logo-header {
@@ -37,73 +28,40 @@ img.logo-header {
 
 nav.nav-header {
   display: flex;
-  gap: 32px;
 }
-
-/* CSS liéer au main */
 
 main.main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
-/* CSS pour la section D'image de fond */
-
 Section.image-fond {
-  background: url(../Document/bg.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #47b4d1;
-  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../Document/bg.jpg) #47b4d1 no-repeat;
+  background-size: contain;
+  padding: 50px 250px;
+  min-height: 125px;
 }
-
-input.barre-recherche {
-  border-radius: 8px;
-  opacity: 0.5;
-  text-align: center;
-  padding: 4px;
-  min-width: 25%;
-}
-
-input.barre-recherche:hover {
-  transition: all 0.3s ease-out;
-  padding: 8px;
-  min-width: 50%;
-}
-
-input.barre-recherche:focus {
-  transition: all 0.3s ease-out;
-  opacity: 1;
-  padding: 8px;
-  min-width: 50%;
-}
-
-/* CSS pour la section principale avec les catégories et les plats */
-
-section.grid-cat,
-section.grid-plat {
+section.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
   padding: 0 75px;
 }
 
 div.carte {
-  border: 1px solid black;
-  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 div.cat {
-  min-height: 150px;
+  min-height: 200px;
 }
 
 div.plat {
@@ -139,23 +97,17 @@ div.plat {
 }
 
 p.texte-cat {
-  border-radius: 4px;
-  padding: 2px 4px;
+  border-radius: 8px;
+  padding: 6px;
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 0;
 }
-
-/* CSS liéer au footer */
 
 footer.footer {
   display: flex;
-  width: 65%;
-  background-color: #970747;
   justify-content: space-around;
-  position: sticky;
-  bottom: 0px;
+  background-color: #970747;
   margin: 0 auto;
-  z-index: 1;
+  width: 65%;
 }
 
 img.image-reseaux {
