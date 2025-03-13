@@ -4,6 +4,10 @@
   font-family: "Montserrat";
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .gap32 {
   gap: 32px;
 }
@@ -12,6 +16,8 @@ body.body {
   display: flex;
   flex-direction: column;
   background-color: #778899;
+  height: 100vh;
+  width: 100vw;
 }
 
 header.header {
@@ -58,6 +64,11 @@ div.carte {
   background-repeat: no-repeat;
   border: 1px solid black;
   border-radius: 8px;
+}
+
+a.plat-categorie {
+  text-decoration: none;
+  color: black;
 }
 
 div.cat {
@@ -112,4 +123,60 @@ footer.footer {
 
 img.image-reseaux {
   height: 75px;
+}
+
+h3 {
+  padding: 0 16px;
+}
+
+section.bouton-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+section.liste-plat-de-la-categorie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 50px;
+}
+
+.plat-cat {
+  justify-items: right;
+  align-items: center;
+  background-color: #a3dae8;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 8px;
+}
+
+.image-food {
+  width: 100%;
+  border-radius: 16px;
+  grid-row: span 2;
+}
+
+.btn-outline-dark {
+  width: 50%;
+}
+
+.description-plat {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  height: 4.5em;
+}
+
+section.article-commande {
+  display: grid;
+  gap: 8px;
+  padding: 0 150px;
+  overflow-y: scroll;
+  height: 15%;
 }
