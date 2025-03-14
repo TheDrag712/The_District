@@ -143,20 +143,21 @@ section.liste-plat-de-la-categorie {
 }
 
 .plat-cat {
-  justify-items: right;
+  justify-items: space-around;
   align-items: center;
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
   padding: 8px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 1fr;
   gap: 8px;
 }
 
 .image-food {
-  width: 100%;
+  width: 60%;
+  /* height: 25vh; */
   border-radius: 16px;
   grid-row: span 2;
 }
@@ -176,7 +177,7 @@ section.liste-plat-de-la-categorie {
 section.article-commande {
   display: grid;
   gap: 8px;
-  padding: 0 150px;
+  padding: 0 25%;
   overflow-y: scroll;
-  height: 15%;
+  height: 11em;
 }
