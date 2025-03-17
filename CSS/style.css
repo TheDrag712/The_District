@@ -148,22 +148,25 @@ section.liste-plat-de-la-categorie {
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
+  width: 35%;
   padding: 8px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 25% 75%;
   grid-template-rows: 1fr 1fr;
   gap: 8px;
 }
 
 .image-food {
-  width: 60%;
-  /* height: 25vh; */
+  width: 100%;
   border-radius: 16px;
   grid-row: span 2;
 }
 
 .btn-outline-dark {
   width: 50%;
+  margin-left: auto;
+  margin-right: 32px;
 }
 
 .description-plat {
@@ -172,12 +175,4 @@ section.liste-plat-de-la-categorie {
   -webkit-line-clamp: 3;
   overflow: hidden;
   height: 4.5em;
-}
-
-section.article-commande {
-  display: grid;
-  gap: 8px;
-  padding: 0 25%;
-  overflow-y: scroll;
-  height: 11em;
 }
