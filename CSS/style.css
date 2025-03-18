@@ -148,7 +148,7 @@ section.liste-plat-de-la-categorie {
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
-  width: 35%;
+  width: 55%;
   padding: 8px;
   margin: 0 auto;
   display: grid;
@@ -172,7 +172,16 @@ section.liste-plat-de-la-categorie {
 .description-plat {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  width: 85%;
+  justify-self: center;
   -webkit-line-clamp: 3;
   overflow: hidden;
   height: 4.5em;
+}
+
+form.commande {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap: 16px;
 }
