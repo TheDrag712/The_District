@@ -86,3 +86,5 @@ for (i = 1; (prenom = ""); i++) {
   console.log("N°" + i + " " + prenom);
 }
 console.log("Vous avez donnez " + i + " prénoms");
+
+// Test pour voir si c'est réparer
