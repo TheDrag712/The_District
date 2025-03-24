@@ -80,11 +80,139 @@
 //     );
 // }
 
-let prenom = " ";
-for (i = 1; (prenom = ""); i++) {
-  let prenom = prompt("Donnez moi le prenom N°" + i);
-  console.log("N°" + i + " " + prenom);
-}
-console.log("Vous avez donnez " + i + " prénoms");
+// // Exercice sur la liste de prénom
+// let nom;
+// let i = 1;
 
-// Test pour voir si c'est réparer
+// while (nom !== null && nom !== "") {
+//   nom = prompt("Donnez-moi le prénom N°" + i);
+
+//   if (nom !== null && nom !== "") {
+//     console.log("N°" + i + " " + nom);
+//     i++;
+//   } else {
+//     console.log("Vous avez donné " + (i - 1) + " prénom(s).");
+//   }
+// }
+
+// // // Exercice sur le chapitre opérateur
+// let a = "100";
+// let b = 100;
+// let c = 1.0;
+// let d = true;
+// console.log("Ceci est une chaîne de caractères : " + a);
+// b--;
+// console.log(b);
+// console.log(c + a);
+// console.log(!d);
+
+// // // Exercice qui donne la liste des nombre entier inférieur
+// let num = parseInt(prompt("Donnez un numéro"));
+// console.log(num);
+// while (num > 0) {
+//   num--;
+//   console.log(num);
+// }
+
+// // // Exercice donnant la somme des notes et leur moyenne
+// // let nombre;
+// // let somme = 0;
+// // let i = 0;
+// // while (nombre != 0) {
+// //   nombre = parseInt(prompt("Donnez un nombre"));
+// //   somme += nombre;
+// //   i++;
+// // }
+// // let moyenne = somme / (i - 1);
+// // console.log("La somme vaut : " + somme);
+// // console.log("La moyenne vaut : " + moyenne);
+
+// // let nombre;
+// // let somme = 0;
+// // for (i = 0; nombre != 0; ++i) {
+// //   nombre = parseInt(prompt("Donnez un nombre"));
+// //   somme += nombre;
+// // }
+// // let moyenne = somme / (i-1);
+// // console.log("La somme vaut : " + somme);
+// // console.log("La moyenne vaut : " + moyenne);
+
+// // // Exercice 4 les multiples
+// let X = parseInt(prompt("Donnez la table que vous souhaitez"));
+// let N = parseInt(
+//   prompt("Donnez le nombre jusqu'à où vous voulez voir la multiplication")
+// );
+// let i = 0;
+// console.log("La table de " + X + " jusqu'à " + N + " Sont :");
+// while (N >= i) {
+//   console.log(X + " * " + i + " = " + i * X);
+//   i++;
+// }
+
+// let X = parseInt(prompt("Donnez la table que vous souhaitez"));
+// let N = parseInt(
+//   prompt("Donnez le nombre jusqu'à où vous voulez voir la multiplication")
+// );
+// console.log("La table de " + X + " jusqu'à " + N + " Sont :");
+// for (i = 0; i <= N; i++) {
+//   console.log(i + " * " + X + " = " + i * X);
+// }
+
+// let X = parseInt(prompt("Donnez la table que vous souhaitez"));
+// let N = parseInt(
+//   prompt("Donnez le nombre jusqu'à où vous voulez voir la multiplication")
+// );
+// console.log("La table de " + X + " jusqu'à " + N + " Sont :");
+// for (N; N >= 0; N--) {
+//   console.log(X + " * " + N + " = " + N * X);
+// }
+
+// // // Exercice 5 Nombre de voyelles
+// let mot = prompt("Veuillez saisir un mot :");
+// let nbrVoyelles = 0;
+// for (let i = 0; i < mot.length; i++) {
+//   caractere = mot.substring(i, i + 1);
+//   if ("AEIOUYaeiouy".indexOf(caractere) !== -1) {
+//     nbrVoyelles++;
+//   }
+// }
+// console.log(`Le nombre de voyelles dans "${mot}" est : ${nbrVoyelles}`);
+
+// // // Les fonctions - Exercices 1
+// function produit(x, y) {
+//   x = parseInt(prompt("Donnez votre premier nombre"));
+//   y = parseInt(prompt("Donnez votre second nombre"));
+//   resultat = x * y;
+//   console.log("Le cube de " + x + " vaut : " + x * x * x);
+//   console.log("Le poduit de " + x + " et " + y + " vaut : " + resultat);
+// }
+
+// function image() {
+//   const element = document.getElementById("Ancre");
+//   element.src = "papillon.jpg";
+// }
+
+// produit();
+
+// // // Les fonctions - Exercices 2
+// function strtok(str1, str2, n) {
+//   str1 = prompt("Donnez votre liste de mot avec un séparateur entre chaque");
+//   str2 = prompt("Veuillez inqiduer votre séparateur");
+//   n = parseInt(prompt("donnez un index, je vous donnerai le mot correspondant"))-1;
+//   const mot = str1.split(str2);
+
+//   console.log(str1);
+//   console.log(mot[n]);
+// }
+
+// // // Les tableaux - Exercices 1
+function tableau() {
+  let TabLength = parseInt(prompt("Donnez la longueur du tableau"));
+  let tab1 = new Array(TabLength);
+  for (let i = 0; i < TabLength; i++) {
+    tab1[i] = [prompt("Donnez la valeur N°" + (i + 1))];
+  }
+  for (i = 0; i < TabLength; i++) {
+    console.log(tab1[i]);
+  }
+}
