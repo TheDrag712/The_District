@@ -206,13 +206,39 @@
 // }
 
 // // // Les tableaux - Exercices 1
-function tableau() {
-  let TabLength = parseInt(prompt("Donnez la longueur du tableau"));
-  let tab1 = new Array(TabLength);
-  for (let i = 0; i < TabLength; i++) {
-    tab1[i] = [prompt("Donnez la valeur N°" + (i + 1))];
-  }
-  for (i = 0; i < TabLength; i++) {
-    console.log(tab1[i]);
-  }
-}
+// function tableau() {
+//   let TabLength = parseInt(prompt("Donnez la longueur du tableau"));
+//   let tab1 = new Array(TabLength);
+//   for (let i = 0; i < TabLength; i++) {
+//     tab1[i] = [prompt("Donnez la valeur N°" + (i + 1))];
+//     console.log(tab1[i]);
+//   }
+// }
+
+// let TabLength = parseInt(prompt("Donnez la longueur du tableau"));
+// tableau2(TabLength);
+
+// function tableau2(TabLength) {
+//   let tab1 = new Array(TabLength);
+//   for (let i = 0; i < TabLength; i++) {
+//     tab1[i] = [prompt("Donnez la valeur N°" + (i + 1))];
+//     console.log(tab1[i]);
+//   }
+// }
+
+// let NbrP = parseInt(prompt("Votre nombre de copie"));
+
+// if (NbrP <= 10) {
+//   console.log(
+//     "Pour imprimer " + NbrP + " copie, ça vous coutera : " + NbrP * 0.1
+//   );
+// } else if (NbrP > 20) {
+//   console.log(
+//     "Pour imprimer " + NbrP + " copie, ça vous coutera : " + NbrP * 0.08
+//   );
+// } else {
+//   console.log(
+//     "Pour imprimer " + NbrP + " copie, ça vous coutera : " + NbrP * 0.09
+//   );
+// }
+
