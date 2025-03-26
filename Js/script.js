@@ -188,8 +188,7 @@
 // }
 
 // function image() {
-//   const element = document.getElementById("Ancre");
-//   element.src = "papillon.jpg";
+//   document.getElementById("Ancre").src = "papillon.jpg";
 // }
 
 // produit();
@@ -242,3 +241,15 @@
 //   );
 // }
 
+// let nb = parseInt(prompt("Nombre pour faire la somme"));
+// let somme = 0;
+// let i;
+// for (let i = 0; i <= nb; i++) {
+//   somme += i;
+//   console.log("N°" + i);
+//   console.log("La Somme est : " + somme);
+// }
+// console.log("La somme des entiers jusqu'à : " + nb + " est : " + somme);
+
+// let nb = parseInt(prompt("Nombre pour faire la somme"));
+// console.log("La somme Vaut : " + (nb * (nb + 1)) / 2);
