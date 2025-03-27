@@ -223,6 +223,8 @@
 //     tab1[i] = [prompt("Donnez la valeur N°" + (i + 1))];
 //     console.log(tab1[i]);
 //   }
+//   console.log(tab1);
+
 // }
 
 // let NbrP = parseInt(prompt("Votre nombre de copie"));
@@ -253,3 +255,26 @@
 
 // let nb = parseInt(prompt("Nombre pour faire la somme"));
 // console.log("La somme Vaut : " + (nb * (nb + 1)) / 2);
+
+// let nombre;
+// let somme = 0;
+// let i;
+
+// for (i = 0; nombre != 0; i++) {
+//   nombre = parseInt(window.prompt("Entrez votre valeur"));
+//   somme += nombre;
+// }
+// let moyenne = somme / (i - 1);
+// console.log("Il y a eu : " + (i - 1) + " valeurs");
+// console.log("La moyenne vaut : " + moyenne);
+// console.log("La somme vaut : " + somme);
+
+// let nb1 = parseInt(prompt("nombre 1"));
+// let nb2 = parseInt(prompt("nombre 1"));
+
+// function div(nb1, nb2) {
+//   alert("Le modulo de " + nb1 + " et de " + nb2 + " est : " + (nb1 % nb2));
+// }
+
+// div(nb1, nb2);
+
