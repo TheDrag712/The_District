@@ -271,10 +271,13 @@
 
 // let nb1 = parseInt(prompt("nombre 1"));
 // let nb2 = parseInt(prompt("nombre 1"));
-
 // function div(nb1, nb2) {
 //   alert("Le modulo de " + nb1 + " et de " + nb2 + " est : " + (nb1 % nb2));
 // }
-
 // div(nb1, nb2);
 
+// let nom = "Pierre";
+// let prenom = "Paul";
+// let valeur = `  ${nom}
+// ${prenom}`;
+// console.log(`Bonjour ${valeur}`);
