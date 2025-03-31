@@ -179,6 +179,11 @@
 // console.log(`Le nombre de voyelles dans "${mot}" est : ${nbrVoyelles}`);
 
 // // // Les fonctions - Exercices 1
+// /**
+//  *
+//  * @param {number} x
+//  * @param {number} y
+//  */
 // function produit(x, y) {
 //   x = parseInt(prompt("Donnez votre premier nombre"));
 //   y = parseInt(prompt("Donnez votre second nombre"));
@@ -256,18 +261,20 @@
 // let nb = parseInt(prompt("Nombre pour faire la somme"));
 // console.log("La somme Vaut : " + (nb * (nb + 1)) / 2);
 
+// let table = [];
 // let nombre;
 // let somme = 0;
-// let i;
-
 // for (i = 0; nombre != 0; i++) {
 //   nombre = parseInt(window.prompt("Entrez votre valeur"));
 //   somme += nombre;
+//   table[i] = nombre;
 // }
 // let moyenne = somme / (i - 1);
 // console.log("Il y a eu : " + (i - 1) + " valeurs");
 // console.log("La moyenne vaut : " + moyenne);
 // console.log("La somme vaut : " + somme);
+// table.pop();
+// console.log(table);
 
 // let nb1 = parseInt(prompt("nombre 1"));
 // let nb2 = parseInt(prompt("nombre 1"));
@@ -281,3 +288,4 @@
 // let valeur = `  ${nom}
 // ${prenom}`;
 // console.log(`Bonjour ${valeur}`);
+
