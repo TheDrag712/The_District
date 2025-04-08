@@ -2,6 +2,7 @@
 
 * {
   font-family: "Montserrat";
+  font-size: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -184,4 +185,17 @@ form.commande {
   flex-direction: column;
   padding: 5%;
   gap: 16px;
+}
+
+@media (max-width: 1014px) {
+  .form-control {
+    display: none;
+  }
+  section.grid-plat-index {
+    display: flex;
+    flex-direction: column;
+  }
+  section.grid-cat-index {
+    display: none;
+  }
 }
