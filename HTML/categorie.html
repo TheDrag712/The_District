@@ -26,11 +26,110 @@
         title="logo transparant"
         class="logo-header"
       />
-      <nav class="nav-header gap32">
-        <a href="index.html" class="btn btn-dark">Acceuil</a>
-        <a href="categorie.html" class="btn btn-dark">Catégorie</a>
-        <a href="plats.html" class="btn btn-dark">Plats</a>
-        <a href="contact.html" class="btn btn-dark">Contact</a>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler bg-secondary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-info-subtle"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                The District
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../HTML/index.html"
+                    >Acceuil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../HTML/plats.html">Plats</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Catégorie
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../HTML/Page_Erreur.HTML"
+                        >Asian Food</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../HTML/Page_Erreur.HTML"
+                        >Burger</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../HTML/Page_Erreur.HTML"
+                        >Pasta</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../HTML/Page_Erreur.HTML"
+                        >Pizza</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../HTML/Page_Erreur.HTML"
+                        >Salade</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../HTML/contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 

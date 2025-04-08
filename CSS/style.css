@@ -149,7 +149,7 @@ section.liste-plat-de-la-categorie {
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
-  width: 55%;
+  /* width: 55%; */
   padding: 8px;
   margin: 0 auto;
   display: grid;
