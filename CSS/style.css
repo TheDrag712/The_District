@@ -46,8 +46,8 @@ Section.image-fond {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../Document/bg.jpg) #47b4d1 no-repeat;
-  background-size: contain;
+  background: url(../Document/38677779204538773550573e0738236e.gif) #47b4d1;
+  /* background-size: contain; */
   padding: 50px 250px;
   min-height: 125px;
 }
@@ -149,7 +149,6 @@ section.liste-plat-de-la-categorie {
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
-  /* width: 55%; */
   padding: 8px;
   margin: 0 auto;
   display: grid;
@@ -191,7 +190,8 @@ form.commande {
   .form-control {
     display: none;
   }
-  section.grid-plat-index {
+  section.grid-plat-index,
+  section.liste-plat-de-la-categorie {
     display: flex;
     flex-direction: column;
   }
