@@ -10,7 +10,7 @@
 }
 
 .gap32 {
-  gap: 32px;
+  gap: 0.5REM;
 }
 
 body.body {
@@ -54,7 +54,7 @@ Section.image-fond {
 section.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 75px;
+  padding: 0 2vw;
 }
 
 div.carte {
@@ -119,7 +119,7 @@ footer.footer {
   justify-content: space-around;
   background-color: #970747;
   margin: 0 auto;
-  width: 65%;
+  width: 50vw;
 }
 
 img.image-reseaux {
@@ -144,35 +144,32 @@ section.liste-plat-de-la-categorie {
 }
 
 .plat-cat {
+  width: 45vw;
   justify-items: space-around;
   align-items: center;
   background-color: #a3dae8;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 8px;
+  padding: 1rem;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 1fr;
-  gap: 8px;
+  display: flex;
+  gap: 2vw;
 }
 
 .image-food {
-  width: 100%;
+  width: 25vw;
+  max-height: 25vh;
   border-radius: 16px;
-  grid-row: span 2;
 }
 
 .btn-outline-dark {
-  width: 50%;
-  margin-left: auto;
-  margin-right: 32px;
+  width: 25vw;
 }
 
 .description-plat {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  width: 85%;
+  width: 25vw;
   justify-self: center;
   -webkit-line-clamp: 3;
   overflow: hidden;
@@ -182,7 +179,7 @@ section.liste-plat-de-la-categorie {
 form.commande {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 0 2.5%;
   gap: 16px;
 }
 
