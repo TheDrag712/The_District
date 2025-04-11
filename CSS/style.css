@@ -10,7 +10,7 @@
 }
 
 .gap32 {
-  gap: 0.5REM;
+  gap: 0.5rem;
 }
 
 body.body {
@@ -47,7 +47,7 @@ Section.image-fond {
   justify-content: center;
   align-items: center;
   background: url(../Document/38677779204538773550573e0738236e.gif) #47b4d1;
-  /* background-size: contain; */
+  background-size: cover;
   padding: 50px 250px;
   min-height: 125px;
 }
@@ -154,7 +154,7 @@ section.liste-plat-de-la-categorie {
   gap: 2vw;
 }
 
-.plat-commannde{
+.plat-commannde {
   width: 6 5vw;
   align-items: center;
   background-color: #a3dae8;
@@ -204,5 +204,19 @@ form.commande {
   }
   section.grid-cat-index {
     display: none;
+  }
+
+  section.liste-plat-de-la-categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plat-cat {
+    width: 75vw;
+  }
+
+  .description-plat {
+    width: 95%;
   }
 }
